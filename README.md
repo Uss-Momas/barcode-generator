@@ -15,4 +15,30 @@
 2. pylint --generate-rcfile > .pylintrc
 ```
 
-
+3. Python Pre-commit
+3.1 Create a filename
+```shell
+touch .pre-commit-config.yaml or echo '' > .pre-commit-config.yaml
+```
+3.2 Append this info
+```yaml
+repos:
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args:
+          [
+            "-rn", # Only display messages
+            "-sn", # Don't display the source
+            "--rcfile=.pylintrc", # Link to your config file
+            "--load-plugins=pylint.extensions.docparams", # Load an extension
+          ]
+```
+3.3 Install the configurations
+```shell
+pre-commit install
+```
