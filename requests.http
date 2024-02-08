@@ -2,5 +2,5 @@ POST http://localhost:3000/create_tag
 Content-Type: application/json
 
 {
-    "product_code": "Uss-34-22"
+    "producasdt_code": "Uss-34-22"
 }
