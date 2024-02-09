@@ -1,4 +1,4 @@
-# NLW
+# NLW - Barcode Generator
 
 ## Config
 1. Virtual Env
