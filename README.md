@@ -1,5 +1,9 @@
 # NLW - Barcode Generator
 
+This project was helded in the 1st edition of 2024 of Rocketseat NLW.
+The idea is simple, generate an barcode image after receiving a product-code.
+
+
 ## Config
 1. Virtual Env
 ```shelll
